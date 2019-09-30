@@ -32,7 +32,7 @@ steps:
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'pipelines-dotnet-core'
+    artifactName: 'webapp'
  
 - task: ArchiveFiles@2
   inputs:
